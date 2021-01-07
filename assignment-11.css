@@ -1,0 +1,232 @@
+:root {
+  --main-txt-color: #000000;
+  --main-p-color: gray;
+  --second-txt-color: rgb(20, 20, 242);
+  --hover-color: rgb(6, 6, 82);
+  --white: #ffffff;
+  --bg-gray: rgb(220, 205, 205);
+}
+
+body {
+  font-family: "Nobile", sans-serif;
+}
+
+body p {
+  font-family: "Roboto", sans-serif;
+}
+
+body img {
+  width: 100%;
+}
+
+body #header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(images/header.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/header.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+body #header .container .navbar-dark {
+  color: var(--white);
+}
+
+body #header .container .navbar-dark .navbar-toggler {
+  color: var(--white);
+  border-color: var(--white);
+}
+
+body #header .container .navbar-dark .navbar-brand {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2em;
+  color: var(--white);
+}
+
+body #header .container .navbar-dark .navbar-nav {
+  margin-left: auto;
+}
+
+body #header .container .navbar-dark .navbar-nav a {
+  padding: 5px 15px;
+  color: var(--white);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+body #header .container .navbar-dark .navbar-nav a:hover {
+  color: var(--hover-color);
+}
+
+body #header .container .navbar-dark .navbar-nav .outline {
+  outline: 1px dashed var(--white);
+}
+
+body #header .container .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: var(--white);
+  margin: 4em 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
+}
+
+body #header .container .item .get-started {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 32em;
+          flex: 1 1 32em;
+  margin-bottom: 3em;
+}
+
+body #header .container .item .get-started span {
+  border: 1px solid var(--white);
+  padding: 5px 15px 0px 15px;
+}
+
+body #header .container .item .get-started h1 {
+  text-transform: capitalize;
+}
+
+body #header .container .item .get-started a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--second-txt-color);
+  padding: 15px 30px;
+}
+
+body #header .container .item .form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 16em;
+          flex: 1 1 16em;
+  height: 100%;
+  background-color: var(--white);
+  padding: 25px;
+  border-radius: 5px;
+  border-bottom: 5px solid var(--second-txt-color);
+}
+
+body #header .container .item .form h3 {
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--main-txt-color);
+}
+
+body #header .container .item .form input[type="text"],
+body #header .container .item .form input[type="email"],
+body #header .container .item .form input[type="tel"],
+body #header .container .item .form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 5px;
+  outline: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 4px;
+  border: 2px solid #aaa;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body #header .container .item .form input[type="text"]:focus,
+body #header .container .item .form input[type="email"]:focus,
+body #header .container .item .form input[type="tel"]:focus,
+body #header .container .item .form textarea:focus {
+  border-color: var(--second-txt-color);
+  -webkit-box-shadow: 0 0 8px 0 var(--second-txt-color);
+          box-shadow: 0 0 8px 0 var(--second-txt-color);
+}
+
+body #header footer {
+  margin-top: 7em;
+  background-color: var(--bg-gray);
+  padding: 3em 0;
+}
+
+body #header footer .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2em;
+}
+
+body #header footer .icon .item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1em;
+          flex: 1 1 1em;
+  margin: 0;
+}
+
+body #header footer .icon .item img {
+  width: 50px;
+  height: 50px;
+}
+
+body #header footer .icon .item a {
+  text-decoration: none;
+  color: var(--main-txt-color);
+  font-weight: 700;
+}
+
+body #practice-areas {
+  padding: 5em 0 0.5em 0;
+  text-align: center;
+}
+
+body #practice-areas .container h1 {
+  color: var(--main-txt-color);
+  text-transform: capitalize;
+}
+
+body #practice-areas .container .underline {
+  width: calc(11% + 160px);
+  margin: 0 auto;
+  height: 4px;
+  background-color: var(--second-txt-color);
+  margin-bottom: 1em;
+}
+
+body #practice-areas .container p {
+  max-width: calc(30% + 400px);
+  margin: 0 auto;
+  color: var(--main-p-color);
+}
+
+body #practice-areas .container .grid {
+  padding: 3em 0;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1.5em;
+  -ms-grid-columns: (minmax(280px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+body #practice-areas .container .grid .item {
+  margin-bottom: 1.5em;
+}
+
+body #practice-areas .container .grid .item img {
+  outline: 1px dashed var(--main-txt-color);
+  padding: 0.5em;
+}
+
+body #practice-areas .container .grid .item h5 {
+  text-transform: capitalize;
+  margin-top: 1em;
+}
+
+body #practice-areas .container .grid .item p {
+  color: var(--main-p-color);
+}
+/*# sourceMappingURL=assignment-11.css.map */
